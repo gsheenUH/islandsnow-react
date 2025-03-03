@@ -30,7 +30,6 @@ const TopMenu = () => (
 const IslandSnowLogo = () => (
   <div className="row">
     <div className="col">
-      {/* Make sure this image is in /public so that /experience-islandsnow-bootstrap-logo.png works */}
       <img 
         src="/experience-islandsnow-bootstrap-logo.png" 
         alt="Island Snow Logo" 
