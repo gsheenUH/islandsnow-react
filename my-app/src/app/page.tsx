@@ -15,8 +15,8 @@ const TopMenu = () => (
         <Nav.Link><Instagram/></Nav.Link>
       </Nav>
       <Nav className="justify-content-end">
-        <Nav.Link><HouseFill/> </Nav.Link>
-        <Nav.Link><Search/> </Nav.Link>
+        <Nav.Link><HouseFill/></Nav.Link>
+        <Nav.Link><Search/></Nav.Link>
         <Nav.Link><PersonFill/> </Nav.Link>
         <NavDropdown title={<Cart/>}>
           <NavDropdown.Item></NavDropdown.Item>
@@ -28,19 +28,86 @@ const TopMenu = () => (
 );
 
 const IslandSnowLogo = () => (
-  <h1>IslandSnowLogo</h1>
+  <div className="row">
+    <div className="col">
+      {/* Make sure this image is in /public so that /experience-islandsnow-bootstrap-logo.png works */}
+      <img 
+        src="/experience-islandsnow-bootstrap-logo.png" 
+        alt="Island Snow Logo" 
+        className="img-fluid rounded mx-auto d-block py-1"
+      />
+    </div>
+  </div>
 );
 
 const MiddleMenu = () => (
-  <h1>MiddleMenu</h1>
+  <div className="row justify-content-center pt-4">
+    <div className="col-1">
+      <div className="dropdown">
+        <div className="dropdown-toggle"><strong>MEN</strong></div>
+      </div>
+    </div>
+    <div className="col-1">
+      <div className="dropdown">
+        <div className="dropdown-toggle"><strong>WOMEN</strong></div>
+      </div>
+    </div>
+    <div className="col-1">
+      <div className="dropdown">
+        <div className="dropdown-toggle"><strong>KIDS</strong></div>
+      </div>
+    </div>
+    <div className="col-1">
+      <div className="dropdown">
+        <div className="dropdown-toggle"><strong>BRANDS</strong></div>
+      </div>
+    </div>
+    <div className="col-1">
+      <div className="dropdown-toggle"><strong>SEARCH</strong></div>
+    </div>
+  </div>
 );
 
 const FullWidthImage = () => (
-  <h1>FullWidthImage</h1>
+  <div className="row justify-content-center">
+    <div className="col">
+      <img 
+        src="/experience-islandsnow-bootstrap-main.png" 
+        alt="Island Snow Main" 
+        className="img-fluid rounded mx-auto d-block" 
+      />
+    </div>
+  </div>
 );
 
 const FooterMenu = () => (
-  <h1>FooterMenu</h1>
+  <footer>
+    <div className="container pt-4">
+      <div className="row py-3">
+        <div className="col">
+          <div>NAVIGATION</div>
+          <hr />
+          <div>About Us</div>
+          <div>Employment</div>
+          <div>Videos</div>
+        </div>
+        <div className="col">
+          <div>MAIN MENU</div>
+          <hr />
+          <div>Men</div>
+          <div>Women</div>
+          <div>Kids</div>
+        </div>
+        <div className="col">
+          <div>CONNECT</div>
+          <hr />
+          <div>Sign up for the latest updates</div>
+          <input type="text" placeholder="Enter Email Address" />
+          <div className="btn btn-dark mt-2">Join</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 );
 
 export default function Home() {
